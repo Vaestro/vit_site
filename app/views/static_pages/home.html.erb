@@ -19,6 +19,7 @@
 	</div>
 
   <div class="slide personal">
+  <div class="background">
     <div class="inner">
       <div class="description">
   			<h1>A personalized workout </br> built around you</h1>
@@ -27,14 +28,13 @@
     <div class="scrollphone">
   	    <%= image_tag("iphonedemo.png", :size => "350x600", :alt => "Logo", :class => "scrollphone")%>
   	</div>
+    </div>
   </div>
 
 <div class="slide smart">
   <div class="background">
-  <div class="circles">
-  </div>
   	<div class="inner">
-  		<h1> it's not just personal, </br> it's smart </h1>
+  		<h1> It's not just personal, </br> it's smart </h1>
   		<p>Our algorithm understands the best way to meet </br> your goals and offer you a workout that is worth your time</p>
   	</div>
   </div>
@@ -118,18 +118,23 @@
 <div class="slide team">
 	<div class="inner">
 		<h1>We are a team of engineers and designers in New York City.</h1>
+		<p>Learn more about Vit</p>
 	</div>
 </div>
   
 <div class="slide footer">
-	<div class="inner">
 		<div class="slinks">
-		  
+		  <%= link_to image_tag("facebook.png", :size => "50x50", :class => "slinks"), "#"%>
+      <%= link_to image_tag("linkedin.png", :size => "50x50", :class => "slinks"), "#"%>
+      <%= link_to image_tag("twitter.png", :size => "50x50", :class => "slinks"), "#"%>
+      <%= link_to image_tag("vintage.png", :size => "50x50", :class => "slinks"), "#"%>
 		</div>
 		<div class="infolinks">
-			
+			<%= link_to "about us", "#", :class => "infolink" %>
+      <%= link_to "careers", "#", :class => "infolink mid" %>
+      <%= link_to "contact us", "#", :class => "infolink" %>
+      <vr>
 		</div>
 		
 	</div>
-</div>
 </div>

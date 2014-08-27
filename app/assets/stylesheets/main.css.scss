@@ -177,6 +177,12 @@ div.slide.personal {
 		position: absolute;
 		bottom: 0px;
 	}
+	.background {
+		background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); /*Fx 3.6-15*/
+		background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0)); /*Standard*/
+	}
 }
 
 div.slide.smart {
@@ -189,17 +195,6 @@ div.slide.smart {
 		background: -o-linear-gradient(rgba(75,173,206,0.9),rgba(75,173,206,0.5)); /*Opera 11.1-12*/
 		background: -moz-linear-gradient(rgba(75,173,206,0.9),rgba(75,173,206,0.5)); /*Fx 3.6-15*/
 		background: linear-gradient(rgba(75,173,206,0.9), rgba(75,173,206,0.5)); /*Standard*/
-	}
-	
-	.circles {
-		position: absolute;
-		opacity: 0.5;
-		width: 140px;
-		height: 140px;
-		background: white; 
-		-moz-border-radius: 70px; 
-		-webkit-border-radius: 70px; 
-		border-radius: 70px;
 	}
 	
 	p {
@@ -302,11 +297,33 @@ div.slide.graph {
 div.slide.team {
 	background: url(/assets/team.png) no-repeat;
 	background-size: 100% 100%;
+	p {
+		color: #aaee00;
+		padding-top: 50%;
+	}        
 }
 
 div.slide.footer {
 	height:auto;
 	text-align:center;
-	padding:100px 0;
+	padding: 5% 10%;
+	.slinks {
+		float: left;
+	}
+	.infolinks {
+		position: relative;
+		text-decoration: none;
+		left: -10%;
+	}
+	.infolink {
+		padding: 0 10px;
+		text-decoration: none;
+		color: #000;
+		
+	}
+	.infolink.mid {
+		border-left: solid 1px #000;
+		border-right: solid 1px #000;
+	}
 }
 
