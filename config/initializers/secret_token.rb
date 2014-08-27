@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-VitSite::Application.config.secret_key_base = '18983a99aa43b99e7160890a63e379c2960a2eb2a47f59f8efcdd132d34f7468078a19d6f927e849627c08c451755e1e7bdfa03026d5b5843763ad745a878294'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+VitSite::Application.config.secret_key_base = secure_token
