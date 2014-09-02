@@ -1,0 +1,6 @@
+<%= form_for Visitor.new do |f| %>
+  
+  <%= f.text_field :email, :class => "input"%>
+  
+  <%= f.submit 'Invite me', :class => "btn" %>
+<% end %>
