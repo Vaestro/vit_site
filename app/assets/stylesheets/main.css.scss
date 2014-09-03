@@ -83,12 +83,12 @@ html, body, {
 }
 
 body {
-	width: auto;
+	max-width: 100%;
 }
 
 div#wrapper {
 	margin: 0 0; 
-	width:auto;
+	max-width: 100%;
 	overflow:auto;
 	position:relative;
 }
