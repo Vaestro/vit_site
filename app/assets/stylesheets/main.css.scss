@@ -89,8 +89,7 @@ body {
 div#wrapper {
 	margin: 0 0; 
 	width:auto;
-
-	overflow:hidden;
+	overflow:auto;
 	position:relative;
 }
 
@@ -100,7 +99,6 @@ div#logo {
 }
 
 div.slide {
-	padding: 50px 0;
 	height: 700px;
 	text-align: center;
 	position: relative;
@@ -117,7 +115,6 @@ div.slide .background {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	display: block;
 	overflow: auto;
 }
 
@@ -125,14 +122,15 @@ div.slide .inner {
 	text-align: center;
 	width: 50%;
 	left:0;
-	    right:0;
-	    margin-left:auto;
-	    margin-right:auto;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 div.slide.main {
 	background: url(/assets/Working.png) no-repeat center;
 	background-size: cover;
+	height: 100vh;
 }
 
 .btn {
@@ -197,7 +195,7 @@ div.slide.main h1 {
 
 div.slide.personal {
 	z-index:10;
-	height: 800px;
+	height: 870px;
 	h1 {
 		color: #1badce;
 	}
@@ -206,8 +204,8 @@ div.slide.personal {
 		right:0;
 		margin-left:auto;
 		margin-right:auto;
-		bottom: 0;
 		position: absolute;
+		bottom: 0;
 		max-width: 350px;
 	}
 	.background {
@@ -234,7 +232,7 @@ div.slide.smart {
 
 div.slide.quality {
 	z-index:10;
-	height: 1000px;
+	height: 1025px;
 	h1, h2, p {
 		color: #1badce;
 	}
@@ -252,14 +250,14 @@ div.slide.quality {
 		margin-left:auto;
 		margin-right:auto;
 		max-width: 350px;
-		position: absolute;
 		bottom: 0px;
+		position:absolute;
 	}                 
 }
 
 div.slide.life {
 	z-index: 10;
-	height: 1200px;
+	height: 1300px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Opera 11.1-12*/
@@ -300,7 +298,7 @@ div.slide.life {
 
 div.slide.graph {
 	z-index:10;
-	height: 1000px;
+	height: 1100px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Opera 11.1-12*/
@@ -312,8 +310,8 @@ div.slide.graph {
 		right:0;
 		margin-left:auto;
 		margin-right:auto;
-		position:absolute;
 		bottom: 0px;
+		position: absolute;
 	} 
 }
 
@@ -381,6 +379,8 @@ div.slide.footer {
 	}
 	
 	div.slide.quality {
+		height: 100vh;
+		
 		.qualityphone {
 			max-width: 350px;
 			left: 60%;
@@ -389,6 +389,8 @@ div.slide.footer {
 	}
 	
 	div.slide.life {
+		height: 100vh;
+		
 		.banner {
 			width: 80%;
 			height: 70%;
@@ -410,6 +412,8 @@ div.slide.footer {
 		}
 	}
 	div.slide.quality {
+		height: 100vh;
+		
 		.info {
 			padding-top: 10%;
 			padding-left: 10%;
@@ -423,6 +427,8 @@ div.slide.footer {
 	}
 
 	div.slide.graph {
+		height: 100vh;
+		
 		.info {
 			padding-top: 10%;
 			padding-right: 15%;
