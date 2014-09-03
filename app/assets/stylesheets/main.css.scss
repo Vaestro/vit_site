@@ -101,7 +101,7 @@ div#logo {
 
 div.slide {
 	padding: 50px 0;
-	height: 100vh;
+	height: 700px;
 	text-align: center;
 	position: relative;
 	font-family: 'ubuntulight';
@@ -197,6 +197,7 @@ div.slide.main h1 {
 
 div.slide.personal {
 	z-index:10;
+	height: 800px;
 	h1 {
 		color: #1badce;
 	}
@@ -206,6 +207,7 @@ div.slide.personal {
 		margin-left:auto;
 		margin-right:auto;
 		bottom: 0;
+		position: absolute;
 		max-width: 350px;
 	}
 	.background {
@@ -232,6 +234,7 @@ div.slide.smart {
 
 div.slide.quality {
 	z-index:10;
+	height: 1000px;
 	h1, h2, p {
 		color: #1badce;
 	}
@@ -249,12 +252,14 @@ div.slide.quality {
 		margin-left:auto;
 		margin-right:auto;
 		max-width: 350px;
+		position: absolute;
 		bottom: 0px;
 	}                 
 }
 
 div.slide.life {
 	z-index: 10;
+	height: 1200px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Opera 11.1-12*/
@@ -295,6 +300,7 @@ div.slide.life {
 
 div.slide.graph {
 	z-index:10;
+	height: 1000px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Opera 11.1-12*/
@@ -306,6 +312,7 @@ div.slide.graph {
 		right:0;
 		margin-left:auto;
 		margin-right:auto;
+		position:absolute;
 		bottom: 0px;
 	} 
 }
@@ -362,6 +369,10 @@ div.slide.footer {
 	
 	.input {
 		width: 300px;
+	}
+	
+	div.slide {
+		height: 100vh;
 	}
 	
 	.scrollphone {
