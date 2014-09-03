@@ -165,6 +165,7 @@ div.slide.main {
 	line-height: 1.33;
 	border-radius: 6px;
 	margin: 10px 10px;
+	text-align: center;
 }
 
 h1 {
@@ -330,6 +331,7 @@ div.slide.graph {
 div.slide.team {
 	background: url(/assets/team.png) no-repeat center;
 	background-size: cover;
+	padding-top:50px;
 	p {
 		color: #aaee00;
 		padding-top: 50%;
