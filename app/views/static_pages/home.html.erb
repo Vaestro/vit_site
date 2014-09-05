@@ -1,49 +1,53 @@
 <div id="wrapper">
 
   <div class="slide main">
-			<div id="logo">
-	      <%= image_tag("Logo.png", :size => "250x250", :alt => "Logo")%>
-			</div>
-        <%= render 'visitors/new' %>
-        <h1>Be your own personal trainer</h1>
+	  <div id="logo">
+	    <%= image_tag("Logo.png", :size => "250x250", :alt => "Logo")%>
 		</div>
+    <%= render 'visitors/new' %>
+    <h1>Be your own personal trainer</h1>
+	</div>
 
   <div class="slide personal">
     <div class="background">
       <div class="inner">
   			<h1>A personalized workout </br> built around you</h1>
   	  </div>
+      <div class="greenline">
+      </div>
+      <div class="greenline">
+      </div>
       <div class="scrollphone">
-  	    <%= image_tag("iphonedemo.png", :alt => "Logo", :class => "scrollphone")%>
+  	    <%= image_tag("iphonedemo.png",:size => "350x600", :alt => "Logo", :class => "scrollphone")%>
   	  </div>
     </div>
   </div>
 
-<div class="slide smart">
-  <div class="background">
-    <div class="inner">
-  		<h1> It's not just personal, </br> it's smart </h1>
-    	<p>Vit's algorithm offers a simple, flexible way to create </br> a smart, custom workout routine that is worth your time. </p>
-    </div>
-      <div class="circles">
-          <div class="circle">
-            <p>Your Experience</p>
-          </div>
-          <div class="circle">
-            <p>Your Schedule</p>
-          </div>
-          <div class="circle middle">
-            <p>Vit's Algorithm</p>
-          </div>
-          <div class="circle">
-            <p>Your Class</p>
-          </div>
-          <div class="circle">
-            <p>Your Lifestyle</p>
-          </div>
+  <div class="slide smart">
+    <div class="background">
+      <div class="inner">
+    		<h1> It's not just personal, </br> it's smart </h1>
+      	<p>Vit's algorithm offers a simple, flexible way to create </br> a smart, custom workout routine that is worth your time. </p>
       </div>
+        <div class="circles">
+            <div class="circle">
+              <p>Your Experience</p>
+            </div>
+            <div class="circle">
+              <p>Your Schedule</p>
+            </div>
+            <div class="circle middle">
+              <p>Vit's Algorithm</p>
+            </div>
+            <div class="circle">
+              <p>Your Class</p>
+            </div>
+            <div class="circle">
+              <p>Your Lifestyle</p>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
 
   <div class="slide quality">
     <div class="background">
@@ -59,72 +63,72 @@
       </div> 
     
       <div class="qualityphone">
-    	    <%= image_tag("qualityphone.png", :alt => "quality", :class => "qualityphone")%>
+    	    <%= image_tag("qualityphone.png",:size => "350x600", :alt => "quality", :class => "qualityphone")%>
     	</div>
     </div>
   </div>
 
-<div class="slide life">
-  <div class="background">
-		<div class="inner">
-			<h1>We understand life happens</h1>
-		</div>
+  <div class="slide life">
+    <div class="background">
+  		<div class="inner">
+  			<h1>We understand life happens</h1>
+  		</div>
     
-    <div class="banner">
-      <div class="dinnerplans">
-        <%= image_tag("clock.png", :size => "100x100", :alt => "clock", :class => "clock")%>
-        <h2> Dinner Plans? </h2>
-        <hr>
-        <p> Vit automatically adjusts to a new workout that fits your tight schedule while still advancing your goals </p>
-      </div>
+      <div class="banner">
+        <div class="dinnerplans">
+          <%= image_tag("clock.png", :size => "100x100", :alt => "clock", :class => "clock")%>
+          <h2> Dinner Plans? </h2>
+          <hr>
+          <p> Vit automatically adjusts to a new workout that fits your tight schedule while still advancing your goals </p>
+        </div>
       
-      <div class="benchtaken">
-        <%= image_tag("twoarrows.png", :size => "150x100", :alt => "twoarrows", :class => "twoarrows")%>
-        <h2> Bench Taken? </h2>
-        <hr>
-        <p> Waiting around at the gym  for a machine is no fun! </br> Substitute any exercise  instantly with just a tap </p>
-      </div>
+        <div class="benchtaken">
+          <%= image_tag("twoarrows.png", :size => "150x100", :alt => "twoarrows", :class => "twoarrows")%>
+          <h2> Bench Taken? </h2>
+          <hr>
+          <p> Waiting around at the gym  for a machine is no fun! </br> Substitute any exercise  instantly with just a tap </p>
+        </div>
       
-      <div class="feelinggood">
-        <%= image_tag("explosion.png", :size => "100x100", :alt => "explosion", :class => "explosion")%>
-        <h2> Feeling Good? </h2>
-        <hr>
-        <p> Want to do a few more sets? Vit figures out which </br> exercises are the best to  supplement your plan </p>
+        <div class="feelinggood">
+          <%= image_tag("explosion.png", :size => "100x100", :alt => "explosion", :class => "explosion")%>
+          <h2> Feeling Good? </h2>
+          <hr>
+          <p> Want to do a few more sets? Vit figures out which </br> exercises are the best to  supplement your plan </p>
+        </div>
       </div>
+    
     </div>
-    
   </div>
-</div>
   
-<div class="slide graph">
-  <div class="background">
-		<div class="inner">
-			<h1>We let you know how you're doing</h1>
-		</div>
+  <div class="slide graph">
+    <div class="background">
+  		<div class="inner">
+  			<h1>We let you know how you're doing</h1>
+  		</div>
     
-    <div class="info">
-      <h2>It's more than just a graph</h2>
-      <p>Plotting points is easy. Vit runs your </br> progress through our analytics engine </br> for insightful reports </p>
-      </br>
-      <h2>Practicality First</h2>
-      <p>Simple and powerful. Our reports </br> offer useful advice so you can focus </br> on what's important </p>
-    </div> 
+      <div class="info">
+        <h2>It's more than just a graph</h2>
+        <p>Plotting points is easy. Vit runs your </br> progress through our analytics engine </br> for insightful reports </p>
+        </br>
+        <h2>Practicality First</h2>
+        <p>Simple and powerful. Our reports </br> offer useful advice so you can focus </br> on what's important </p>
+      </div> 
     
-    <div class="graphphone">
-  	    <%= image_tag("graphphone.png", :size => "350x600", :alt => "Analytics", :class => "graphphone")%>
+      <div class="graphphone">
+    	    <%= image_tag("graphphone.png", :size => "350x600", :alt => "Analytics", :class => "graphphone")%>
+    	</div>
+    
   	</div>
-    
-	</div>
-</div>
+  </div>
   
-<div class="slide team">
-	<div class="inner">
-		<h1>We are a team of engineers and designers in New York City.</h1>
-		<p>Learn more about Vit</p>
-	</div>
-</div>
+  <div class="slide team">
+  	<div class="inner">
+  		<h1>We are a team of engineers and designers in New York City.</h1>
+  		<p>Learn more about Vit</p>
+  	</div>
+  </div>
   
-<div class="slide footer">
+  <div class="slide footer">
 		<div class="slinks">
 		  <%= link_to image_tag("facebook.png", :size => "40x40", :class => "slink"), "http://www.facebook.com/vitfitnessapp/"%>
       <%= link_to image_tag("linkedin.png", :size => "40x40", :class => "slink"), "#"%>
@@ -137,6 +141,6 @@
       <%= link_to "contact us", "#", :class => "infolink" %>
       <vr>
 		</div>
-		
 	</div>
+  
 </div>

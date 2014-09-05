@@ -89,26 +89,51 @@ body {
 div#wrapper {
 	margin: 0 0; 
 	max-width: 100%;
-	overflow:auto;
-	position:relative;
-}
-
-div#logo {
-	left:0;
-	right:0;
-	margin-left:auto;
-	margin-right:auto;
-	padding-bottom: 15%;
+	max-height: auto;
+	display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+	  -moz-box-orient: vertical;
+	  -moz-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
 }
 
 div.slide {
-	height: 700px;
+	min-height: 700px;
 	text-align: center;
 	position: relative;
 	font-family: 'ubuntulight';
 	background: url(/assets/rbackground.png) fixed;
 	background-repeat: repeat;
 	background-size: 640x1136;
+	-webkit-box-flex: 1;
+	  -webkit-flex: 1;
+	  -moz-box-flex: 1;
+	  -ms-flex: 1;
+	  flex: 1;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: center;
+	  -webkit-justify-content: center;
+	  -moz-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -webkit-flex-direction: column;
+	  -moz-box-orient: vertical;
+	  -moz-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
 }
 
 div.slide .background {
@@ -124,9 +149,10 @@ div.slide .background {
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
-	position: absolute;
 	bottom: 0;
 	max-width: 300px;
+	height: auto;
+	position: absolute;
 }
 
 div.slide .inner {
@@ -138,9 +164,18 @@ div.slide .inner {
     margin-right:auto;
 }
 
+div#logo {
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom: 15%;
+	float: none;
+}
+
 div.slide.main {
 	background: url(/assets/Working.png) no-repeat center;
-	background-size: cover;
+	background-size: 100% 100%;
 	overflow: visible;
 }
 
@@ -208,9 +243,10 @@ div.slide.main h1 {
 
 div.slide.personal {
 	z-index:10;
-	height: 900px;
+	min-height: 800px;
 	h1 {
 		color: #1badce;
+		
 	}
 
 	.background {
@@ -219,12 +255,19 @@ div.slide.personal {
 		background: -moz-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); /*Fx 3.6-15*/
 		background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0)); /*Standard*/
 	}
+	
+	.greenline {
+		width: 100%;
+		height: 10%;
+		background: rgba(174,238,0, 0.6);
+		margin: 20% 0;
+	}
 }
 
 
 div.slide.smart {
-	height: 850px;
 	z-index:10;
+	min-height: 850px;
 	.background {
 		background: -webkit-linear-gradient(rgba(75,173,206,0.8),rgba(75,173,206,0.3)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(75,173,206,0.8),rgba(75,173,206,0.3)); /*Opera 11.1-12*/
@@ -237,6 +280,11 @@ div.slide.smart {
 	}
 	.circles {
 		margin-left: 5%;
+		left:10%;
+		right:10%;
+		margin-left:5%;
+		margin-right:5%;
+		position: absolute;
 	}
 
 	.circle { 
@@ -262,12 +310,11 @@ div.slide.smart {
 
 div.slide.quality {
 	z-index:10;
-	height: 1150px;
+	min-height: 900px;
 	h1, h2, p {
 		color: #1badce;
 	}
 	
-
 	.background {
 		background: -webkit-linear-gradient(rgba(75,173,206,0.3),rgba(75,173,206,0)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(75,173,206,0.3),rgba(75,173,206,0)); /*Opera 11.1-12*/
@@ -278,7 +325,7 @@ div.slide.quality {
 
 div.slide.life {
 	z-index: 10;
-	height: 1300px;
+	min-height: 1200px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Opera 11.1-12*/
@@ -292,7 +339,6 @@ div.slide.life {
 		background: #1badce;
 		opacity: 0.6;
 		display: block;
-		overflow: auto;
 		.dinnerplans {
 			.clock {
 				padding-bottom: 20px;
@@ -319,7 +365,7 @@ div.slide.life {
 
 div.slide.graph {
 	z-index:10;
-	height: 1200px;
+	min-height: 1000px;
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Opera 11.1-12*/
@@ -340,7 +386,7 @@ div.slide.team {
 }
 
 div.slide.footer {
-	height:auto;
+	min-height: 50px;
 	padding: 5% 10%;
 	
 	.infolinks {
@@ -391,10 +437,24 @@ div.slide.footer {
 	.scrollphone {
 		position: absolute;
 		max-width: 350px;
-		
+	}
+	
+	div.slide.personal {
+		min-height: 700px;
+		h1 {
+			margin-bottom: 40%;
+		}
+		.greenline {
+			margin: 10% 0;
+			
+		}
 	}
 	div.slide.smart {
-		height: 100vh;
+		min-height: 700px;
+		.circles {
+			left:0;
+			right:0;
+		}
 		.circle {
 		    width: 200px;
 		    height: 200px;
@@ -404,7 +464,7 @@ div.slide.footer {
 		}
 	}
 	div.slide.life {
-		height: 100vh;
+		min-height: 700px;
 		
 		.banner {
 			width: 80%;
@@ -427,7 +487,7 @@ div.slide.footer {
 		}
 	}
 	div.slide.quality {
-		height: 100vh;
+		min-height: 700px;
 		
 		.info {
 			padding-top: 10%;
@@ -442,7 +502,7 @@ div.slide.footer {
 	}
 
 	div.slide.graph {
-		height: 100vh;
+		min-height: 700px;
 		
 		.info {
 			padding-top: 10%;
@@ -458,5 +518,9 @@ div.slide.footer {
 	
 	.slinks {
 		float: left;
+	}
+	
+	div.slide.footer {
+		max-height: 50px;
 	}
 }
