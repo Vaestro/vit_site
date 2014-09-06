@@ -367,6 +367,9 @@ div.slide.smart {
 	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
 		height: 110vh;
 	}
+	@media (min-width: 718px){
+		height: 100vh;
+	}
 	.inner {
 		width: 90%;
 	}
