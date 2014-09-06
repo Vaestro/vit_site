@@ -70,13 +70,6 @@ textarea {
     resize: vertical;
 }
 
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
 html, body, {
 	width:100%;
 	height:100%;
@@ -86,26 +79,119 @@ body {
 	max-width: 100%;
 }
 
+h1 {
+	color: #fff;
+	font-weight: normal;
+	font-family: 'ubuntulight';
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+	h1 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+@media (min-width: 718px){
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: 1024px){
+	h1 {
+		font-size: 40px;
+		line-height: 40px;
+	}
+}
+
+@media (min-width: 1292px) {
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+}
+
+h2 {
+	color: #fff;
+	font-weight: normal;
+	font-family: 'ubuntulight';
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+	h2 {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+
+@media (min-width: 718px){
+	h2 {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+@media (min-width: 1024px){
+	h2 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: 1292px) {
+	h2 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+
+p {
+	color: #fff;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+	p {
+		font-size: 10px;
+		line-height: 15px;
+	}
+}
+
+@media (min-width: 718px){
+	p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+
+@media (min-width: 1024px){
+	p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
 div#wrapper {
 	margin: 0 0; 
 	max-width: 100%;
 	max-height: auto;
 	display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -moz-box;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -webkit-box-orient: vertical;
-	  -webkit-box-direction: normal;
-	  -webkit-flex-direction: column;
-	  -moz-box-orient: vertical;
-	  -moz-box-direction: normal;
-	  -ms-flex-direction: column;
-	  flex-direction: column;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 div.slide {
-	min-height: 700px;
+	height: 100vh;
 	text-align: center;
 	position: relative;
 	font-family: 'ubuntulight';
@@ -113,12 +199,12 @@ div.slide {
 	background-repeat: repeat;
 	background-size: 640x1136;
 	-webkit-box-flex: 1;
-	  -webkit-flex: 1;
-	  -moz-box-flex: 1;
-	  -ms-flex: 1;
-	  flex: 1;
-	  display: -webkit-box;
-	  display: -webkit-flex;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
 	  display: -moz-box;
 	  display: -ms-flexbox;
 	  display: flex;
@@ -136,23 +222,14 @@ div.slide {
 	  flex-direction: column;
 }
 
+
+
 div.slide .background {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
-}
-
-.scrollphone, .qualityphone, .graphphone {
-	left:0;
-	right:0;
-	margin-left:auto;
-	margin-right:auto;
-	bottom: 0;
-	max-width: 300px;
-	height: auto;
-	position: absolute;
 }
 
 div.slide .inner {
@@ -164,6 +241,22 @@ div.slide .inner {
     margin-right:auto;
 }
 
+.phone {
+	bottom: 0;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	width: 45vh;
+	height: auto;
+	position: absolute;
+}
+
+.scrollphone, .qualityphone, .graphphone {
+	width: 100%;
+	height: auto;
+}
+
 div#logo {
 	left:0;
 	right:0;
@@ -171,12 +264,36 @@ div#logo {
 	margin-right:auto;
 	padding-bottom: 15%;
 	float: none;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		width: 200px;
+		height: 200px;
+	}
+
+	@media (min-width: 718px){
+		width: 250px;
+		height: 250px;
+	}
+}
+
+.logo {
+	width: 100%;
+	height: auto;
 }
 
 div.slide.main {
 	background: url(/assets/Working.png) no-repeat center;
-	background-size: 100% 100%;
-	overflow: visible;
+	background-size: cover;
+	h1 {
+		font-family: 'ubuntumedium';
+		color:#fff;
+		margin: 10% 0;
+	}
+}
+
+@media (-webkit-max-device-pixel-ratio: 1.75), (max-resolution: 168dpi) {
+	div.slide.main {
+		background: #000;
+	}
 }
 
 .btn {
@@ -203,22 +320,10 @@ div.slide.main {
 	text-align: center;
 }
 
-h1 {
-	color: #fff;
-	font-weight: normal;
-	font-family: 'ubuntulight';
-}
-
-h2 {
-	color: #fff;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 25px;
-}
-p {
-	color: #fff;
-	font-size:15px;
-	line-height: 20px;
+@media (min-width: 1024px){
+	.input {
+		width: 300px
+	}
 }
 
 .error_explanation {
@@ -234,16 +339,8 @@ p {
 	padding: 10px;
 }
 
-div.slide.main h1 {
-	font-family: 'ubuntumedium';
-	color:#fff;
-	margin-bottom: 65px;
-	margin-top: 106px;
-}
-
 div.slide.personal {
 	z-index:10;
-	min-height: 800px;
 	h1 {
 		color: #1badce;
 		
@@ -260,14 +357,17 @@ div.slide.personal {
 		width: 100%;
 		height: 10%;
 		background: rgba(174,238,0, 0.6);
-		margin: 20% 0;
+		margin: 10% 0;
 	}
 }
 
 
 div.slide.smart {
 	z-index:10;
-	min-height: 800px;
+	.inner {
+		width: 90%;
+	}
+	
 	.background {
 		background: -webkit-linear-gradient(rgba(75,173,206,0.8),rgba(75,173,206,0.3)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(75,173,206,0.8),rgba(75,173,206,0.3)); /*Opera 11.1-12*/
@@ -275,34 +375,35 @@ div.slide.smart {
 		background: linear-gradient(rgba(75,173,206,0.8), rgba(75,173,206,0.3)); /*Standard*/
 	}
 	
-	p {
-		padding-top: 10%;
+	.algo {
+		display: inline-block;
+		margin: 5% 0;
 	}
+	
 	.circles {
-		margin-left: 5%;
 		left:0;
 		right:0;
 		margin-left:auto;
 		margin-right:auto;
-		position: absolute;
 	}
-
+	
 	.circle { 
 	   float: left;
 	   background: rgba(250, 250, 250, 0.25);
-	   width: 125px;
-	   height: 125px;
-	   -moz-border-radius: 125px; 
-	   -webkit-border-radius: 125px; 
-	   border-radius: 125px;
 	   margin: 2% 2%;
+	   display: inline-block;
+	   width: 15%;
+	   padding:5% 0;
+	   -moz-border-radius: 50%; 
+	   -webkit-border-radius: 50%; 
+	   border-radius: 50%;
 	   p {
 		   color: #fff;
 		   position: relative;
 		   top: 20%;
 	   }
 	}
-
+	
 	.circle.middle {
 		background: rgba(174,238,0, 0.4);
 	}             
@@ -310,7 +411,13 @@ div.slide.smart {
 
 div.slide.quality {
 	z-index:10;
-	min-height: 1000px;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 150vh;
+	}
+
+	@media (min-width: 718px){
+		height: 100vh
+	}
 	h1, h2, p {
 		color: #1badce;
 	}
@@ -320,12 +427,41 @@ div.slide.quality {
 		background: -o-linear-gradient(rgba(75,173,206,0.3),rgba(75,173,206,0)); /*Opera 11.1-12*/
 		background: -moz-linear-gradient(rgba(75,173,206,0.3),rgba(75,173,206,0)); /*Fx 3.6-15*/
 		background: linear-gradient(rgba(75,173,206,0.3), rgba(75,173,206,0)); /*Standard*/
-	}             
+	}     
+	
+	@media (min-width: 718px){
+		.info {
+			padding-top: 5%;
+			padding-left: 10%;
+			float: left;
+			text-align: right;
+			width: 30%;
+		}
+	}  
+	
+	@media (min-width: 718px){
+		.phone {
+			left: 35%;
+			
+		}
+	}
+
+	@media (min-width: 1024px){
+		.phone {
+			left: 40%;
+		}
+	}
+
+	@media (min-width: 1292px) {
+		.phone {
+			left: 45%;
+		}
+	}        
 }
 
 div.slide.life {
 	z-index: 10;
-	min-height: 1200px;
+
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Opera 11.1-12*/
@@ -339,6 +475,34 @@ div.slide.life {
 		background: #1badce;
 		opacity: 0.6;
 		display: block;
+		.bannerpic {
+			display: inline-block;
+		}
+		
+		@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+			.bannerpic {
+				height: 50px;
+				width: 50px;
+			}
+			.bannerpic.middle {
+				width: 75px;
+			}
+		}
+		
+		@media (min-width: 718px){
+			.bannerpic {
+				height: 100px;
+				width: 100px;
+			}
+			.bannerpic.middle {
+				width: 150px;
+			}
+		}
+		
+		.clock, .explosion, .twoarrows {
+			width: auto;
+			height: 100%;
+		}
 		.dinnerplans {
 			.clock {
 				padding-bottom: 20px;
@@ -360,17 +524,73 @@ div.slide.life {
 			text-align: center;
 			padding: 5% 2.5% 5% 2.5%;
 		}
+		
+	}
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		.banner {
+				width: 80%;
+				height: 70%;
+				.dinnerplans {
+					float: left;
+					width: 28%;
+					padding: 5% 0 5% 5%;
+				}
+				.benchtaken {
+					float: left;
+					width: 28%;
+					padding: 5% 2.5% 5% 2.5%;
+				}
+				.feelinggood {
+					float: left;
+					width: 28%;
+					padding: 5% 5% 5% 0;
+				}
+			}
 	}
 }
 
 div.slide.graph {
 	z-index:10;
-	min-height: 1050px;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 150vh;
+	}
+
+	@media (min-width: 718px){
+		height: 100vh
+	}
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Opera 11.1-12*/
 		background: -moz-linear-gradient(rgba(26,188,158,0.5),rgba(26,188,158,0.8)); /*Fx 3.6-15*/
 		background: linear-gradient(rgba(26,188,158,0.5), rgba(26,188,158,0.8)); /*Standard*/
+	}
+	@media (min-width: 718px){
+		.info {
+			padding-top: 5%;
+			padding-right: 10%;
+			float: right;
+			text-align: left;
+			width: 30%;
+		}
+	}  
+	
+	@media (min-width: 718px){
+		.phone {
+			right: 35%;
+			
+		}
+	}
+
+	@media (min-width: 1024px){
+		.phone {
+			right: 40%;
+		}
+	}
+
+	@media (min-width: 1292px) {
+		.phone {
+			right: 45%;
+		}
 	}
 }
 
@@ -382,11 +602,12 @@ div.slide.team {
 		color: #aaee00;
 		padding-top: 50%;
 		font-size: 30px;
+		line-height: 35px;
 	}        
 }
 
 div.slide.footer {
-	min-height: 50px;
+	height: 50px;
 	padding: 5% 10%;
 	
 	.infolinks {
@@ -406,123 +627,5 @@ div.slide.footer {
 	.infolink.mid {
 		border-left: solid 1px #000;
 		border-right: solid 1px #000;
-	}
-}
-
-@media screen and (min-width: 900px) { 
-	h1 {
-		font-size: 50px;
-		line-height: 50px;
-	}
-	
-	h2 {
-		font-size: 30px;
-		line-height: 35px;
-	}
-	
-	p {
-		color: #fff;
-		font-size:20px;
-		line-height: 25px;
-	}
-	
-	.input {
-		width: 300px;
-	}
-	
-	div.slide {
-		height: 100vh;
-	}
-	
-	.scrollphone {
-		position: absolute;
-		max-width: 350px;
-	}
-	
-	div.slide.personal {
-		min-height: 700px;
-		h1 {
-			margin-bottom: 40%;
-		}
-		.greenline {
-			margin: 10% 0;
-			
-		}
-	}
-	div.slide.smart {
-		min-height: 700px;
-		.circles {
-			left:0;
-			right:0;
-			margin-left: 5%;
-			margin-right: 5%;
-		}
-		.circle {
-		    width: 200px;
-		    height: 200px;
-		    -moz-border-radius: 200px; 
-		    -webkit-border-radius: 200px; 
-		    border-radius: 200px;
-		}
-	}
-	div.slide.life {
-		min-height: 700px;
-		
-		.banner {
-			width: 80%;
-			height: 70%;
-			.dinnerplans {
-				float: left;
-				width: 28%;
-				padding: 5% 0 5% 5%;
-			}
-			.benchtaken {
-				float: left;
-				width: 28%;
-				padding: 5% 2.5% 5% 2.5%;
-			}
-			.feelinggood {
-				float: left;
-				width: 28%;
-				padding: 5% 5% 5% 0;
-			}
-		}
-	}
-	div.slide.quality {
-		min-height: 700px;
-		
-		.info {
-			padding-top: 10%;
-			padding-left: 10%;
-			float: left;
-			text-align: right;
-		}
-		.qualityphone {
-			max-width: 350px;
-			left: 30%;
-		}
-	}
-
-	div.slide.graph {
-		min-height: 700px;
-		
-		.info {
-			padding-top: 10%;
-			padding-right: 15%;
-			float: right;
-			text-align: left;
-		}
-		.graphphone {
-			max-width: 350px;
-			right: 30%;
-		} 
-	}
-	
-	.slinks {
-		float: left;
-	}
-	
-	div.slide.footer {
-		max-height: 50px;
 	}
 }
