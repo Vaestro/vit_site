@@ -364,9 +364,6 @@ div.slide.personal {
 
 div.slide.smart {
 	z-index:10;
-	@media (orientation: portrait) {
-		height: 50vh;
-	}
 	.inner {
 		width: 90%;
 	}
@@ -414,8 +411,8 @@ div.slide.smart {
 
 div.slide.quality {
 	z-index:10;
-	@media (orientation: portrait) {
-		height: 130vh;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 150vh;
 	}
 
 	@media (min-width: 718px){
@@ -464,7 +461,12 @@ div.slide.quality {
 
 div.slide.life {
 	z-index: 10;
-
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 900px;
+	}
+	@media (min-width: 718px){
+		height: 100vh;
+	}
 	.background {
 		background: -webkit-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Safari 5.1-6*/
 		background: -o-linear-gradient(rgba(26,188,158,0.1),rgba(26,188,158,0.4)); /*Opera 11.1-12*/
@@ -484,11 +486,11 @@ div.slide.life {
 		
 		@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
 			.bannerpic {
-				height: 50px;
-				width: 50px;
+				height: 75px;
+				width: 75px;
 			}
 			.bannerpic.middle {
-				width: 75px;
+				width: 100px;
 			}
 		}
 		
@@ -529,7 +531,7 @@ div.slide.life {
 		}
 		
 	}
-	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi), (orientation: landscape) {
+	@media (min-width: 718px){
 		.banner {
 				width: 80%;
 				height: 70%;
@@ -554,8 +556,8 @@ div.slide.life {
 
 div.slide.graph {
 	z-index:10;
-	@media (orientation: portrait) {
-		height: 130vh;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 150vh;
 	}
 
 	@media (min-width: 718px){
