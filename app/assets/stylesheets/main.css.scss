@@ -364,6 +364,9 @@ div.slide.personal {
 
 div.slide.smart {
 	z-index:10;
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		height: 110vh;
+	}
 	.inner {
 		width: 90%;
 	}
@@ -478,7 +481,7 @@ div.slide.quality {
 div.slide.life {
 	z-index: 10;
 	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
-		height: 900px;
+		height: 1000px;
 	}
 	@media (min-width: 718px){
 		height: 100vh;
