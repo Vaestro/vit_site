@@ -87,15 +87,15 @@ h1 {
 
 @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
 	h1 {
-		font-size: 20px;
-		line-height: 20px;
+		font-size: 30px;
+		line-height: 30px;
 	}
 }
 
 @media (min-width: 718px){
 	h1 {
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 35px;
 	}
 }
 
@@ -121,8 +121,8 @@ h2 {
 
 @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
 	h2 {
-		font-size: 15px;
-		line-height: 20px;
+		font-size: 20px;
+		line-height: 25px;
 	}
 }
 
@@ -153,8 +153,8 @@ p {
 
 @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
 	p {
-		font-size: 10px;
-		line-height: 15px;
+		font-size: 15px;
+		line-height: 20px;
 	}
 }
 
@@ -387,21 +387,37 @@ div.slide.smart {
 		margin-right:auto;
 	}
 	
-	.circle { 
-	   float: left;
+	.circle {
 	   background: rgba(250, 250, 250, 0.25);
 	   margin: 2% 2%;
 	   display: inline-block;
-	   width: 15%;
-	   padding:5% 0;
 	   -moz-border-radius: 50%; 
 	   -webkit-border-radius: 50%; 
 	   border-radius: 50%;
 	   p {
 		   color: #fff;
 		   position: relative;
-		   top: 20%;
+		   top: 15%;
+		   width: 90%;
+   			left:0;
+   			right:0;
+   			margin-left:auto;
+   		   margin-right:auto;
 	   }
+	}
+	@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 168dpi) {
+		.circle {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	@media (min-width: 718px){
+		.circle { 
+	 	   width: 15%;
+		   height: auto;
+		   padding:5% 0;
+		   float: left;
+  	 	}
 	}
 	
 	.circle.middle {
