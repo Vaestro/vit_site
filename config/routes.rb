@@ -1,6 +1,8 @@
 VitSite::Application.routes.draw do
   root  'static_pages#home'
   
+  match '/about', to: 'static_pages#about', via: 'get'
+  
   resource :visitors, :only => [:new, :create] # POST to visitor_path to create a visitor  
   
   # The priority is based upon order of creation: first created -> highest priority.
